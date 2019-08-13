@@ -1,4 +1,15 @@
 const functions = require('./function');
+
+// beforeEach(() => initDataBase());
+// afterEach(() => closeDataBase());
+
+beforeAll(() => initDataBase());
+afterAll(() => closeDataBase());
+
+
+const initDataBase = () => console.log('DataBase Initialized...');
+const closeDataBase = () => console.log('DataBase Closed...');
+
 // toBe
 test('Adds 2 + 2 to equal 4', () => {
     expect(functions.add(2, 2)).toBe(4);

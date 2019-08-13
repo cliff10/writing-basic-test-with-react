@@ -9,5 +9,5 @@ test('String reverse', () => {
 })
 
 test('String reverse with uppercase', () => {
-    expect(reverseString('Hello')).toEqual('olleh');
+    expect(reverseString('hello')).toEqual('olleh');
 })
