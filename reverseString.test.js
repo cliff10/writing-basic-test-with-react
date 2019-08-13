@@ -7,3 +7,7 @@ test('reverseString function exits', () => {
 test('String reverse', () => {
     expect(reverseString('hello')).toEqual('olleh');
 })
+
+test('String reverse with uppercase', () => {
+    expect(reverseString('Hello')).toEqual('olleh');
+})
